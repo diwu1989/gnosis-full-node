@@ -5,6 +5,7 @@ docker rm gnosis-fullnode
 export IMAGE=diwu1989/gnosis-fullnode:latest
 export MAX_PEERS=64
 export CACHE=128
+mkdir -p data
 docker run --name gnosis-fullnode -d \
         --restart unless-stopped \
         --stop-timeout 30 \
