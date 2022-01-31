@@ -9,6 +9,7 @@ mkdir -p data
 docker run --name gnosis-fullnode -d \
         --restart unless-stopped \
         --stop-timeout 30 \
+        --memory 3G \
         -p 8645:8645 -p 8646:8646 -p 30304:30304 -p 30304:30304/udp \
         -v $PWD/data:/opt/openethereum/data $IMAGE \
         --chain xdai \
