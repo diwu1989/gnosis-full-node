@@ -18,10 +18,11 @@ docker run --name gnosis-fullnode -d \
         --jsonrpc-cors all \
         --jsonrpc-interface all \
         --jsonrpc-hosts all \
-        --jsonrpc-apis web3,eth,net,parity \
+        --jsonrpc-apis web3,eth,net \
+        --jsonrpc-server-threads 4 \
         --ws-port 8646 \
         --ws-interface all \
-        --ws-apis web3,eth,net,parity,pubsub \
+        --ws-apis web3,eth,net,pubsub,debug \
         --ws-origins all \
         --ws-hosts all \
         --max-peers $MAX_PEERS \
