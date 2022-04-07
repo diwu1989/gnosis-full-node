@@ -20,7 +20,7 @@ docker run --name gnosis-fullnode -d \
         --jsonrpc-interface all \
         --jsonrpc-hosts all \
         --jsonrpc-apis web3,eth,net \
-        --jsonrpc-server-threads 4 \
+        --jsonrpc-server-threads 8 \
         --ws-port 8646 \
         --ws-interface all \
         --ws-apis web3,eth,net,pubsub,traces \
