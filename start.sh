@@ -4,13 +4,13 @@ docker rm gnosis-fullnode
 
 export IMAGE=diwu1989/gnosis-fullnode:latest
 export MAX_PEERS=200
-export CACHE=1024
+export CACHE=2048
 export PORT=30308
 mkdir -p data
 docker run --name gnosis-fullnode -d \
         --restart unless-stopped \
         --stop-timeout 30 \
-        --memory 4G \
+        --memory 6G \
         -p 28645:8645 -p 28646:8646 -p $PORT:$PORT -p $PORT:$PORT/udp \
         -v $PWD/data:/opt/openethereum/data $IMAGE \
         --chain xdai \
