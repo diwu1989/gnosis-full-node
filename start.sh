@@ -14,7 +14,7 @@ docker run --name gnosis-fullnode -d \
         -p 127.0.0.1:28645:8645 -p 28646:8646 -p $PORT:$PORT -p $PORT:$PORT/udp \
         -v $PWD/data:/opt/openethereum/data $IMAGE \
         --chain xdai \
-        --min-gas-price 1000000006 \
+        --min-gas-price 1000000000 \
         --base-path '/opt/openethereum/data' \
         --jsonrpc-port 8645 \
         --jsonrpc-cors all \
