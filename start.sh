@@ -4,7 +4,7 @@ docker rm gnosis-fullnode
 
 export IMAGE=diwu1989/gnosis-fullnode:latest
 export MAX_PEERS=200
-export CACHE=640
+export CACHE=768
 export PORT=30308
 mkdir -p data
 docker run --name gnosis-fullnode -d \
