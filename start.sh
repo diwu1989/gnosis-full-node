@@ -6,7 +6,7 @@ export IMAGE=diwu1989/gnosis-fullnode:latest
 export MAX_PEERS=200
 export CACHE=768
 export PORT=30308
-export TX_QUEUE_SIZE=256
+export TX_QUEUE_SIZE=512
 mkdir -p data
 docker run --name gnosis-fullnode -d \
         --restart unless-stopped \
