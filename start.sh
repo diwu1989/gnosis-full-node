@@ -3,7 +3,8 @@ docker stop gnosis-fullnode
 docker rm gnosis-fullnode
 
 export IMAGE=diwu1989/gnosis-fullnode:latest
-export MAX_PEERS=200
+export MIN_PEERS=100
+export MAX_PEERS=300
 export CACHE=768
 export PORT=30308
 export TX_QUEUE_SIZE=512
@@ -28,6 +29,7 @@ docker run --name gnosis-fullnode -d \
         --ws-apis web3,eth,net,pubsub,traces \
         --ws-origins all \
         --ws-hosts all \
+        --min-peers $MIN_PEERS \
         --max-peers $MAX_PEERS \
         --tx-queue-size $TX_QUEUE_SIZE \
         --no-secretstore \
