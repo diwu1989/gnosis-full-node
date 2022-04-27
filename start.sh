@@ -3,8 +3,8 @@ docker stop gnosis-fullnode
 docker rm gnosis-fullnode
 
 export IMAGE=diwu1989/gnosis-fullnode:latest
-export MIN_PEERS=100
-export MAX_PEERS=300
+export MIN_PEERS=50
+export MAX_PEERS=150
 export CACHE=768
 export PORT=30308
 export TX_QUEUE_SIZE=512
