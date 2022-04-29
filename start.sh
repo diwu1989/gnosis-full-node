@@ -7,7 +7,7 @@ export MIN_PEERS=50
 export MAX_PEERS=150
 export CACHE=768
 export PORT=20653
-export TX_QUEUE_SIZE=512
+export TX_QUEUE_SIZE=1024
 mkdir -p data
 docker run --name gnosis-fullnode -d \
         --restart unless-stopped \
