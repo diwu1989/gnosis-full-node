@@ -34,4 +34,5 @@ docker run --name gnosis-fullnode -d \
         --tx-queue-size $TX_QUEUE_SIZE \
         --no-secretstore \
         --port $PORT \
-        --cache-size $CACHE
+        --cache-size $CACHE \
+        --no-persistent-txqueue
