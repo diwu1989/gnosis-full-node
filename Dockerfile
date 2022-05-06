@@ -1,6 +1,6 @@
 FROM ubuntu:jammy
 
-ADD https://github.com/diwu1989/openethereum/releases/download/v3.3.5/openethereum-f0676b3fa.zip /tmp
+ADD https://github.com/diwu1989/openethereum/releases/download/v3.3.5/openethereum-024486bda.zip /tmp
 RUN mkdir -p /opt/openethereum/data && \
     chmod g+rwX /opt/openethereum/data && \
     mkdir -p /opt/openethereum/release && \
