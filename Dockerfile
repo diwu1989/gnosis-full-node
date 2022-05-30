@@ -1,6 +1,6 @@
 FROM ubuntu:jammy
 
-ADD https://github.com/diwu1989/openethereum/releases/download/v3.3.5/openethereum-e86e0c715.zip /tmp
+ADD https://storageapi.fleek.co/6cc5209f-c08d-4a5c-815e-5bf664da6658-bucket/openethereum/openethereum-9cb9e5914.zip /tmp
 RUN mkdir -p /opt/openethereum/data && \
     chmod g+rwX /opt/openethereum/data && \
     mkdir -p /opt/openethereum/release && \
